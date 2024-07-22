@@ -9,7 +9,7 @@ class GlobalThemeData {
   static const ColorScheme lightColorScheme = ColorScheme(
       brightness: Brightness.light,
       primary: Color.fromARGB(255, 67, 100, 54),
-      onPrimary: Color.fromARGB(255, 255, 255, 255),
+      onPrimary: Color.fromARGB(255, 249, 234, 218),
       secondary: Color.fromARGB(255, 252, 170, 103),
       onSecondary: Color.fromARGB(255, 0, 0, 0),
       tertiary: Color.fromARGB(255, 230, 248, 178),

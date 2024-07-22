@@ -11,7 +11,7 @@ class PlantGridView extends StatelessWidget {
       padding: const EdgeInsets.all(25),
       crossAxisSpacing: 25,
       mainAxisSpacing: 25,
-      children: const <PlantGridItem>[
+      children: <PlantGridItem>[
         PlantGridItem(),
         PlantGridItem(),
         PlantGridItem(),

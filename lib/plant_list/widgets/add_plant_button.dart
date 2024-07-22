@@ -13,7 +13,7 @@ class AddPlantButton extends StatelessWidget {
       shape: const CircleBorder(),
       child: Container(
         constraints: const BoxConstraints.expand(),
-        margin: const EdgeInsets.all(6.0),
+        margin: const EdgeInsets.all(5.0),
         decoration: BoxDecoration(
           border: GradientBoxBorder(
             gradient: LinearGradient(
