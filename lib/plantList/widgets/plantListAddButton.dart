@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:gradient_borders/box_borders/gradient_box_border.dart';
 
 class PlantListAddButton extends StatelessWidget {
@@ -9,7 +10,9 @@ class PlantListAddButton extends StatelessWidget {
     final theme = Theme.of(context);
 
     return  FloatingActionButton.large(
-      onPressed: () {},
+      onPressed: () {
+        context.go('/plantCreateEdit');
+      },
       shape: const CircleBorder(),
       child: Container(
         constraints: const BoxConstraints.expand(),
