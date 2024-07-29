@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
-class PlantGridItem extends StatelessWidget {
-  PlantGridItem({super.key});
+class PlantListGridItem extends StatelessWidget {
+  const PlantListGridItem({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -48,12 +49,17 @@ class PlantGridItem extends StatelessWidget {
       ),
     );
 
-    return Stack(
-      alignment: AlignmentDirectional.bottomCenter,
-      children: [
-        plantPicture,
-        plantName,
-      ],
+    return TextButton(
+        onPressed: () {
+            context.go('/plantCreateEdit');
+          },
+        child: Stack(
+          alignment: AlignmentDirectional.bottomCenter,
+          children: [
+            plantPicture,
+            plantName,
+          ],
+        )
     );
   }
 }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gradient_borders/box_borders/gradient_box_border.dart';
 
-class AddPlantButton extends StatelessWidget {
-  const AddPlantButton({super.key});
+class PlantListAddButton extends StatelessWidget {
+  const PlantListAddButton({super.key});
 
   @override
   Widget build(BuildContext context) {

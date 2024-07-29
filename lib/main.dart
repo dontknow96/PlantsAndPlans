@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gradient_borders/box_borders/gradient_box_border.dart';
-import 'plant_list/plant_list.dart';
+import 'package:plants_and_plans/router/router.dart';
 import 'themes/global_theme_data.dart';
 
 void main() {
@@ -12,27 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Flutter Demo',
       theme: GlobalThemeData.lightThemeData,
-      home: Scaffold(
-        appBar: AppBar(
-          toolbarHeight: 65.0,
-          leading: const Icon(Icons.image),
-          title: const Text("Plants & Plans"),
-          shape: GradientBoxBorder(
-            gradient: LinearGradient(
-                colors: [
-                  GlobalThemeData.lightThemeData.colorScheme.surface,
-                  GlobalThemeData.lightThemeData.colorScheme.background,
-                  GlobalThemeData.lightThemeData.colorScheme.surface,
-                ]
-            ),
-            width: 4.0,
-          ),
-        ),
-        body: const PlantList(),
-      ),
+      routerConfig: router,
     );
   }
 }
