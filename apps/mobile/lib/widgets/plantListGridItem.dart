@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
-class PlantGridItem extends StatelessWidget {
-  const PlantGridItem({super.key});
+class PlantListGridItem extends StatelessWidget {
+  const PlantListGridItem({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,9 +17,9 @@ class PlantGridItem extends StatelessWidget {
         borderRadius: BorderRadius.circular(35),
       ),
       child: Icon(
-        Icons.image,
-        color: theme.colorScheme.onPrimary,
-        size: 30,
+          Icons.image,
+          color: theme.colorScheme.onPrimary,
+          size: 30,
       ),
     );
 
@@ -31,28 +32,34 @@ class PlantGridItem extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: theme.colorScheme.onBackground.withOpacity(0.3),
+            color:  theme.colorScheme.onBackground.withOpacity(0.3),
             spreadRadius: 1,
             blurRadius: 5,
             offset: const Offset(2, 2),
           ),
-        ],
+        ]
       ),
       child: const Align(
-        child: Text(
-          'Plant Name',
-          textAlign: TextAlign.left,
-          textScaler: TextScaler.linear(1.2),
-        ),
+          alignment: Alignment.center,
+          child: Text(
+            "Plant Name",
+            textAlign: TextAlign.left,
+            textScaler: TextScaler.linear(1.2),
+          )
       ),
     );
 
-    return Stack(
-      alignment: AlignmentDirectional.bottomCenter,
-      children: [
-        plantPicture,
-        plantName,
-      ],
+    return TextButton(
+        onPressed: () {
+            context.go('/plantCreateEdit');
+          },
+        child: Stack(
+          alignment: AlignmentDirectional.bottomCenter,
+          children: [
+            plantPicture,
+            plantName,
+          ],
+        )
     );
   }
 }
