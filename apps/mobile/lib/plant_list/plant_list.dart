@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'widgets/add_plant_button.dart';
-import 'widgets/plant_grid_view.dart';
+import 'package:plants_and_plans_mobile/plant_list/widgets/add_plant_button.dart';
+import 'package:plants_and_plans_mobile/plant_list/widgets/plant_grid_view.dart';
 
 class PlantList extends StatelessWidget {
   const PlantList({super.key});
@@ -12,7 +12,8 @@ class PlantList extends StatelessWidget {
       bottomNavigationBar: BottomAppBar(
         shape: AutomaticNotchedShape(
           RoundedRectangleBorder(
-              borderRadius: BorderRadius.vertical(top: Radius.circular(80))),
+            borderRadius: BorderRadius.vertical(top: Radius.circular(80)),
+          ),
         ),
       ),
       floatingActionButton: AddPlantButton(),
