@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:plants_and_plans_mobile/widgets/plantListAddButton.dart';
-import 'package:plants_and_plans_mobile/widgets/plantListAppBar.dart';
-import 'package:plants_and_plans_mobile/widgets/plantListBottomAppBar.dart';
-import 'package:plants_and_plans_mobile/widgets/plantListGridView.dart';
+import 'package:plants_and_plans_mobile/widgets/plant_list_add_button.dart';
+import 'package:plants_and_plans_mobile/widgets/plant_list_app_bar.dart';
+import 'package:plants_and_plans_mobile/widgets/plant_list_bottom_app_bar.dart';
+import 'package:plants_and_plans_mobile/widgets/plant_list_grid_view.dart';
 
 class PlantList extends StatelessWidget {
   const PlantList({super.key});

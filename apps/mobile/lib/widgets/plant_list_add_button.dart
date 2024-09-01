@@ -9,26 +9,26 @@ class PlantListAddButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
 
-    return  FloatingActionButton.large(
+    return FloatingActionButton.large(
       onPressed: () {
         context.go('/plantCreateEdit');
       },
       shape: const CircleBorder(),
       child: Container(
         constraints: const BoxConstraints.expand(),
-        margin: const EdgeInsets.all(5.0),
+        margin: const EdgeInsets.all(5),
         decoration: BoxDecoration(
           border: GradientBoxBorder(
             gradient: LinearGradient(
-                colors: [
-                  theme.colorScheme.surface,
-                  theme.colorScheme.background,
-                  theme.colorScheme.surface,
-                ]
+              colors: [
+                theme.colorScheme.surface,
+                theme.colorScheme.background,
+                theme.colorScheme.surface,
+              ],
             ),
-            width: 4.0,
+            width: 4,
           ),
-          borderRadius: BorderRadius.circular(50)
+          borderRadius: BorderRadius.circular(50),
         ),
         child: const Icon(Icons.add),
       ),

@@ -1,5 +1,5 @@
 import 'package:go_router/go_router.dart';
-import 'package:plants_and_plans_mobile/views/plantCreateEdit.dart';
+import 'package:plants_and_plans_mobile/views/plant_create_edit.dart';
 import 'package:plants_and_plans_mobile/views/plant_list.dart';
 
 class RouterConfigMobile {
