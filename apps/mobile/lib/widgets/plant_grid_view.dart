@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:plants_and_plans_mobile/plant_list/widgets/plant_grid_item.dart';
+import 'package:plants_and_plans_mobile/widgets/plant_grid_item.dart';
 
 class PlantGridView extends StatelessWidget {
   const PlantGridView({super.key});
