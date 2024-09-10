@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:plants/plants.dart';
 import 'package:plants_and_plans_mobile/app/app.dart';
 
 Future<void> bootstrap() async{
