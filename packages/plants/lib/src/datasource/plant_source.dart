@@ -20,7 +20,7 @@ abstract class PlantSource {
   /// Gets all Plants
   Future<(PlantSourceResult,Iterable<PlantModel>)> getPlants();
 
-  /// Edits a Plant
+  /// Gets a Plant
   Future<(PlantSourceResult, PlantModel?)> getPlant(int id);
 
   /// Edits a Plant
